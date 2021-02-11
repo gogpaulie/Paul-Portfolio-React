@@ -1,4 +1,5 @@
 import React from 'react';
+import Tilt from 'react-tilt';
 import githubIcon from '../assets/icons/github.svg';
 import externalIcon from '../assets/icons/external-link.svg';
 
@@ -8,7 +9,11 @@ const Project = ({ title, image, description, tools, github, link, id }) => {
       <div
         className={id % 2 === 0 ? 'project__image order2' : 'project__image'}
       >
-        <img src={image} alt={title} />
+        <Tilt options={{ scale: 1, max: 15 }}>
+          <a href={link} target='_blank' rel='noreferrer'>
+            <img src={image} alt={title} />
+          </a>
+        </Tilt>
       </div>
       <div className='project__info order1'>
         <h3 className='project__info--title'>{title}</h3>
