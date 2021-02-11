@@ -28,7 +28,9 @@ const Project = ({ title, image, description, tools, github, link, id }) => {
             href={github}
           >
             <img src={githubIcon} alt='see code' />
-            <p>See Code</p>
+            <p>
+              <span>&larr;</span> See Code
+            </p>
           </a>
           <a
             className='project__info--links-live'
@@ -37,7 +39,9 @@ const Project = ({ title, image, description, tools, github, link, id }) => {
             href={link}
           >
             <img src={externalIcon} alt='see live' />
-            <p>See Live</p>
+            <p>
+              <span>&larr;</span> See Live
+            </p>
           </a>
         </div>
       </div>

@@ -20,6 +20,8 @@ $ig-xsmall-screen: 480px !default;
     color: white;
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    line-height: 3rem;
+    text-align: center;
     @media (max-width: $ig-small-screen) {
       font-size: 2rem;
     }

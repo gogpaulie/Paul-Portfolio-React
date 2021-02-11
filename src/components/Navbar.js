@@ -12,7 +12,7 @@ const Navbar = ({ scrollActive, isMobileView, open, handleOpen }) => {
           </div>
           {isMobileView ? (
             <i
-              class={`fas fa-${open ? 'times' : 'bars'}`}
+              className={`fas fa-${open ? 'times' : 'bars'}`}
               onClick={handleOpen}
             ></i>
           ) : (

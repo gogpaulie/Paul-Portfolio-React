@@ -35,13 +35,14 @@ function App() {
   }
 
   useEffect(() => {
+    handleResize();
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
-  });
+  }, []);
 
   return (
     <div className='App container' id='home'>
-      <NavbarMobileDrawer open={openNav} />
+      <NavbarMobileDrawer open={openNav} handleOpen={handleOpen} />
       <Navbar
         scrollActive={scrollActive}
         isMobileView={isMobileView}

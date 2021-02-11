@@ -145,6 +145,7 @@ const Contact = () => {
           className='g-recaptcha'
           sitekey='6LfrD1MaAAAAACjAeO8BuoYsURo4eGJhKGqvayCg'
           onChange={onChange}
+          theme='dark'
         />
         <Snackbar
           open={openCaptchaAlert}
@@ -173,7 +174,7 @@ const Contact = () => {
           </Alert>
         </Snackbar>
         <button className='cta-btn cta-btn--contact' id='sendBtn' type='submit'>
-          SEND <i class='far fa-paper-plane'></i>
+          SEND <i className='far fa-paper-plane'></i>
         </button>
       </form>
     </div>
