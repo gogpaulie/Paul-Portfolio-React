@@ -6,6 +6,7 @@ import ProjectSection from './components/ProjectSection';
 import FreelanceSection from './components/FreelanceSection';
 import Contact from './components/Contact';
 import NavbarMobileDrawer from './components/NavbarMobileDrawer';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
       <ProjectSection />
       <FreelanceSection />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -21,10 +21,10 @@ const Navbar = ({ scrollActive, isMobileView, open, handleOpen }) => {
                 <a href='#home'>Home</a>
               </li>
               <li>
-                <a href='#about'>About</a>
+                <a href='#projects'>Projects</a>
               </li>
               <li>
-                <a href='#projects'>Freelance</a>
+                <a href='#freelance'>Services</a>
               </li>
               <li>
                 <a href='#contact'>Contact</a>

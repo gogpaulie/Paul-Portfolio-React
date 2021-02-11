@@ -32,7 +32,7 @@ h1 {
   -webkit-text-fill-color: transparent; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto; }
 
 h3 {
@@ -47,10 +47,14 @@ svg {
   color: #fafafa; }
 
 .footer {
+  margin: 5rem 0;
   text-align: center;
   padding: 2rem 0;
   font-size: 1.5rem;
-  background-color: #ccc; }
+  background-color: #999;
+  position: absolute;
+  left: 0;
+  width: 100%; }
 
 /*
 
@@ -135,6 +139,41 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   line-height: 1;
   z-index: 1;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s; }
+  .cta-btn--contact {
+    color: #a162e8;
+    -webkit-text-fill-color: #a162e8;
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg, #4158d0 0%, #a162e8 100%);
+    border-image-slice: 1; }
+    @supports (-webkit-background-clip: text) or (background-clip: text) {
+      .cta-btn--contact {
+        background-image: linear-gradient(135deg, #4158d0 0%, #a162e8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent; } }
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+      .cta-btn--contact {
+        color: #a162e8 !important; }
+        .cta-btn--contact:hover {
+          color: #fff !important; } }
+    @media (max-width: 37.5em) {
+      .cta-btn--contact {
+        background-image: none;
+        border: 2px solid #a162e8;
+        -webkit-text-fill-color: #a162e8; } }
+    .cta-btn--contact::after {
+      background-image: linear-gradient(135deg, #4158d0 0%, #a162e8 100%); }
+      @media (max-width: 37.5em) {
+        .cta-btn--contact::after {
+          background-image: none; } }
+    .cta-btn--contact:hover {
+      -webkit-text-fill-color: #fff;
+      text-decoration: none; }
+      @media (max-width: 37.5em) {
+        .cta-btn--contact:hover {
+          -webkit-text-fill-color: #a162e8; } }
+      .cta-btn--contact:hover::after {
+        width: 100%; }
   .cta-btn::after {
     content: '';
     display: block;
@@ -203,6 +242,18 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   display: flex;
   margin: 5rem 0;
   align-items: center; }
+  @media (max-width: 1200px) {
+    .project {
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.1);
+      max-width: 900px;
+      margin: 5rem auto;
+      padding: 5rem;
+      border-radius: 1rem; }
+      .project__image {
+        order: 1; }
+      .project__info {
+        text-align: center; } }
   .project__image {
     flex: 1; }
     .project__image img {
@@ -224,7 +275,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
       display: flex;
       flex-wrap: wrap; }
       .project__info--tools-badge {
-        margin: 0 0.5rem;
+        margin: 0.5rem;
         padding: 0.5rem 1rem;
         border: 1px solid white;
         border-radius: 5px; }
@@ -322,6 +373,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     transition: all 0.3s;
     transform: translateX(-50px); }
   .contact-form__control {
+    background-color: transparent;
     box-shadow: none;
     border-radius: 0;
     border-color: #ccc;
@@ -418,6 +470,9 @@ textarea {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
+
+.freelance {
+  margin: 20rem 0; }
 
 .Hero {
   margin: 4rem;

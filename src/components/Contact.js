@@ -172,8 +172,8 @@ const Contact = () => {
             Message Sent! Talk to you soon! 😁
           </Alert>
         </Snackbar>
-        <button className='contact-form__btn' id='sendBtn' type='submit'>
-          send
+        <button className='cta-btn cta-btn--contact' id='sendBtn' type='submit'>
+          SEND <i class='far fa-paper-plane'></i>
         </button>
       </form>
     </div>
