@@ -63,10 +63,10 @@ const Contact = () => {
 
       emailjs
         .sendForm(
-          'service_tev9jzvREMOVE',
-          'template_4kl84vqREMOVE',
+          'service_tev9jzv',
+          'template_4kl84vq',
           e.target,
-          'user_BaAAqPGltN6DwLfEHQAP1REMOVE'
+          'user_BaAAqPGltN6DwLfEHQAP1'
         )
         .then(
           (result) => {
