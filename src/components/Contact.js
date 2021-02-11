@@ -143,7 +143,7 @@ const Contact = () => {
         </div>
         <ReCAPTCHA
           className='g-recaptcha'
-          sitekey='6LfJ0UQaAAAAAJqar3Ay8wC6F59l6TPu1aNJoqUD'
+          sitekey='6LfrD1MaAAAAACjAeO8BuoYsURo4eGJhKGqvayCg'
           onChange={onChange}
         />
         <Snackbar
