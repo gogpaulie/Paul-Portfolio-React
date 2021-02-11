@@ -1,0 +1,136 @@
+// <div className='project container'>
+//       <div className='project__image'>
+//         <img src={image1} alt={title} />
+//       </div>
+//       <div className='project__info'>
+//         <h3 className='project__info--title'>{title}</h3>
+//         <p className='project__info--desc'>{description}</p>
+//         <ul className='project__info--tools'>
+//           {tools.map((tool) => (
+//             <li className='project__info--tools-badge' key={tool}>{tool}</li>
+//           ))}
+//         </ul>
+//         <div className='project__info--links'>
+//           <a href={github}>
+//             <img src={githubIcon} alt='see code' />
+//           </a>
+//           <a href={link}>
+//             <img src={externalIcon} alt='see live' />
+//           </a>
+//         </div>
+//       </div>
+//     </div>
+
+.project {
+  display: flex;
+  margin: 5rem 0;
+  align-items: center;
+
+  &__image {
+    flex: 1;
+    & img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  &__info {
+    padding: 3rem;
+    flex: 1;
+    &--title {
+      font-size: 3rem;
+      padding: 2rem 0;
+    }
+
+    &--desc {
+      font-size: 1.5rem;
+      padding: 2rem 0;
+      line-height: 2rem;
+    }
+
+    &--tools {
+      list-style: none;
+      font-size: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      &-badge {
+        margin: 0 0.5rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid white;
+        border-radius: 5px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    //   <div className='project__info--links'>
+    //   <a className='project__info--links-github' href={github}>
+    //     <img src={githubIcon} alt='see code' />
+    //     <p>See Code</p>
+    //   </a>
+    //   <a className='project__info--links-live' href={link}>
+    //     <img src={externalIcon} alt='see live' />
+    //     <p>See Live</p>
+    //   </a>
+    //    </div>
+
+    &--links {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 0;
+      height: 3rem;
+      width: 3rem;
+
+      & img {
+        height: 100%;
+        width: 100%;
+      }
+
+      &-github {
+        position: relative;
+        &:hover p {
+          opacity: 1;
+          transform: translateX(5rem);
+        }
+        & p {
+          display: flex;
+          width: 100px;
+          font-size: 1.5rem;
+          text-decoration: none;
+          color: white;
+          position: absolute;
+          top: 10px;
+          transform: translateX(-10px);
+          z-index: -2;
+          opacity: 0;
+          transition: all 0.3s ease;
+        }
+      }
+      &-live {
+        position: relative;
+        &:hover p {
+          opacity: 1;
+          transform: translateX(5rem);
+        }
+        & p {
+          display: flex;
+          width: 100px;
+          font-size: 1.5rem;
+          text-decoration: none;
+          color: white;
+          position: absolute;
+          top: 10px;
+          transform: translateX(-10px);
+          z-index: -2;
+          opacity: 0;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+.order2 {
+  order: 2;
+}
