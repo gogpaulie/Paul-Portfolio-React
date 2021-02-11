@@ -1,4 +1,5 @@
 import logo from '../assets/logoTransparent.png';
+import logoWebp from '../assets/logoTransparent.webp';
 
 const Navbar = ({ scrollActive, isMobileView, open, handleOpen }) => {
   return (
@@ -7,7 +8,11 @@ const Navbar = ({ scrollActive, isMobileView, open, handleOpen }) => {
         <div className='container'>
           <div className='nav__logo'>
             <a href='#home'>
-              <img src={logo} alt='logo' />
+              <picture>
+                <source type='image/webp' srcSet={logoWebp} />
+                <source type='image/jpeg' srcSet={logo} />
+                <img src={logo} alt='logo' />
+              </picture>
             </a>
           </div>
           {isMobileView ? (

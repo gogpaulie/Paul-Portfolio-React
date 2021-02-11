@@ -12,6 +12,7 @@ const ProjectSection = () => {
           id={p.id}
           title={p.title}
           image={p.image}
+          webp={p.webp}
           description={p.description}
           tools={p.tools}
           link={p.link}

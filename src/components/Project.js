@@ -3,7 +3,16 @@ import Tilt from 'react-tilt';
 import githubIcon from '../assets/icons/github.svg';
 import externalIcon from '../assets/icons/external-link.svg';
 
-const Project = ({ title, image, description, tools, github, link, id }) => {
+const Project = ({
+  title,
+  image,
+  webp,
+  description,
+  tools,
+  github,
+  link,
+  id,
+}) => {
   return (
     <div className='project container'>
       <div
@@ -11,7 +20,11 @@ const Project = ({ title, image, description, tools, github, link, id }) => {
       >
         <Tilt options={{ scale: 1, max: 15 }}>
           <a href={link} target='_blank' rel='noreferrer'>
-            <img src={image} alt={title} />
+            <picture>
+              <source type='image/webp' srcSet={webp} />
+              <source type='image/jpeg' srcSet={image} />
+              <img src={image} alt={title} />
+            </picture>
           </a>
         </Tilt>
       </div>
