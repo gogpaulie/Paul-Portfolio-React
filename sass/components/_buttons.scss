@@ -95,18 +95,18 @@ $mid-font-size: 2.5rem;
     $secondary-color 100%
   );
   border-image-slice: 1;
-  @include supportIE11() {
-    color: $secondary-color !important;
-    &:hover {
-      color: $white-color !important;
-    }
-  }
-  // Responsive Button hero style
-  @include respond(phone) {
-    background-image: none;
-    border: 2px solid $secondary-color;
-    -webkit-text-fill-color: $secondary-color;
-  }
+  // @include supportIE11() {
+  //   color: $secondary-color !important;
+  //   &:hover {
+  //     color: $white-color !important;
+  //   }
+  // }
+  // // Responsive Button hero style
+  // @include respond(phone) {
+  //   background-image: none;
+  //   border: 2px solid $secondary-color;
+  //   -webkit-text-fill-color: $secondary-color;
+  // }
 
   &::after {
     background-image: linear-gradient(
