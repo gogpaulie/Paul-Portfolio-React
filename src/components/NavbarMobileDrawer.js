@@ -10,6 +10,11 @@ const NavbarMobileDrawer = ({ open, handleOpen }) => {
           </a>
         </li>
         <li className='drawer__list--link'>
+          <a href='#about' className='current' onClick={handleOpen}>
+            About
+          </a>
+        </li>
+        <li className='drawer__list--link'>
           <a href='#projects' onClick={handleOpen}>
             Projects
           </a>

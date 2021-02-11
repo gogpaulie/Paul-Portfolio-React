@@ -484,6 +484,29 @@ textarea {
 .drawer.open {
   transform: translateX(0); }
 
+.about {
+  text-align: center;
+  padding: 5rem;
+  border-radius: 1rem;
+  margin-bottom: 20rem; }
+  @media (max-width: 768px) {
+    .about {
+      margin: 0 1rem; } }
+  .about__title {
+    font-size: 4rem; }
+  .about__story {
+    width: 60%;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 5rem auto; }
+    @media (max-width: 768px) {
+      .about__story {
+        width: 90%;
+        font-size: 1.5rem; } }
+  .about__seework {
+    font-size: 2rem;
+    margin: 2rem; }
+
 .projects__title {
   font-size: 4rem;
   padding: 2rem 0;

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import About from './components/About/About';
 import ProjectSection from './components/ProjectSection';
 import FreelanceSection from './components/FreelanceSection';
 import Contact from './components/Contact';
@@ -50,6 +51,7 @@ function App() {
         open={openNav}
       />
       <Hero />
+      <About />
       <ProjectSection />
       <FreelanceSection />
       <Contact />

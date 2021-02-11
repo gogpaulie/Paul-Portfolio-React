@@ -26,6 +26,9 @@ const Navbar = ({ scrollActive, isMobileView, open, handleOpen }) => {
                 <a href='#home'>Home</a>
               </li>
               <li>
+                <a href='#about'>About</a>
+              </li>
+              <li>
                 <a href='#projects'>Projects</a>
               </li>
               <li>
