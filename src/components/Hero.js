@@ -30,7 +30,7 @@ const Hero = () => {
         </p>
         <a
           className='cta-btn cta-btn--hero'
-          href='https://pdfhost.io/v/ALzjQ.adV_ppresumefig0221minpdf.pdf'
+          href='https://pdfhost.io/v/F4f.rV8L2_ppresumefig0221minpdf.pdf'
           target='_blank'
           rel='noreferrer'
         >
