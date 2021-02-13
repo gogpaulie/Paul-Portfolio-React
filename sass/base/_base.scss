@@ -8,7 +8,7 @@ $ig-xsmall-screen: 480px !default;
 $dark-theme-text: rgba(255, 255, 255, 0.87);
 $dark-theme-background: rgb(18, 18, 18);
 $light-theme-text: rgb(18, 18, 18);
-$light-theme-background: rgba(255, 255, 255, 0.87);
+$light-theme-background: #98c2ff;
 $nineties-theme-text: rgba(255, 255, 255, 0.87);
 $nineties-theme-background: pink;
 
@@ -67,6 +67,7 @@ body {
   line-height: 1.5rem;
   font-weight: 400;
   text-rendering: optimizelegibility;
+  transition: background-color 0.5s ease;
 }
 
 h1 {
@@ -82,6 +83,14 @@ h1 {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  &.light {
+    background-image: linear-gradient(
+      43deg,
+      #2c10c9 0%,
+      #274b81 46%,
+      #0e323d 100%
+    );
+  }
 }
 
 h2 {
@@ -97,6 +106,15 @@ h2 {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  &.light {
+    background-image: linear-gradient(
+      43deg,
+      #2c10c9 0%,
+      #274b81 46%,
+      #0e323d 100%
+    );
+  }
 }
 
 .container {
@@ -120,6 +138,15 @@ h3 {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  &.light {
+    background-image: linear-gradient(
+      45deg,
+      #2c10c9 0%,
+      #0e323d 50%,
+      #274b81 69%,
+      #ffffff 100%
+    );
+  }
 }
 
 svg {

@@ -49,11 +49,21 @@ $ig-xsmall-screen: 480px !default;
   text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
+  &.light {
+    color: $light-theme-text;
+  }
 }
 
 .nav.active {
   background-color: #222;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active.light {
+  background-color: white;
+  & a {
+    color: black;
+  }
 }
 
 .nav.active a {
