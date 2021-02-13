@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { ThemeContext } from '../context/ThemeContext';
 import emailjs from 'emailjs-com';
 import ReCAPTCHA from 'react-google-recaptcha';
 import Snackbar from '@material-ui/core/Snackbar';
@@ -9,6 +10,7 @@ function Alert(props) {
 }
 
 const Contact = () => {
+  const { theme } = useContext(ThemeContext);
   const [recaptchaChecked, setRecaptchaChecked] = useState(false);
   const [openCaptchaAlert, setOpenCaptchaAlert] = useState(false);
   const [openSuccessAlert, setOpenSuccessAlert] = useState(false);
@@ -92,18 +94,18 @@ const Contact = () => {
   // !messageSent ? (
   return (
     <div className='form-container' id='contact'>
-      <h1 className='form-container__title'>Contact Me</h1>
-      <p className='form-container__subtitle'>
+      <h2 className={`form-container__title ${theme}`}>Contact Me</h2>
+      <p className={`form-container__subtitle ${theme}`}>
         Do you want to collaborate? Message me below and I'll get back to you
         ASAP!
       </p>
       <form className='contact-form' onSubmit={sendEmail}>
         <div className='contact-form__group'>
-          <label className='contact-form__label' id='name'>
+          <label className={`contact-form__label ${theme}`} id='name'>
             Name
           </label>
           <input
-            className='contact-form__control'
+            className={`contact-form__control ${theme}`}
             placeholder='Jane Doe'
             type='text'
             onFocus={showLabel}
@@ -113,11 +115,11 @@ const Contact = () => {
           />
         </div>
         <div className='contact-form__group'>
-          <label className='contact-form__label' id='email'>
+          <label className={`contact-form__label ${theme}`} id='email'>
             Email
           </label>
           <input
-            className='contact-form__control'
+            className={`contact-form__control ${theme}`}
             placeholder='jane@doe.com'
             type='email'
             name='user_email'
@@ -127,11 +129,11 @@ const Contact = () => {
           />
         </div>
         <div className='contact-form__group'>
-          <label className='contact-form__label' id='message'>
+          <label className={`contact-form__label ${theme}`} id='message'>
             Message
           </label>
           <textarea
-            className='contact-form__control'
+            className={`contact-form__control ${theme}`}
             rows='5'
             cols='50'
             placeholder='Enter Message...'

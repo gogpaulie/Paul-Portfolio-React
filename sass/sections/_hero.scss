@@ -10,15 +10,18 @@
   flex-wrap: wrap;
 
   &__animation {
+    // height: 500px;
+    min-height: 600px;
     margin-left: auto;
-    width: 18rem;
-    @media (min-width: 768px) {
-      width: 24rem;
+    width: 50%;
+    @media (max-width: $ig-med-screen) {
+      min-height: 400px;
     }
-    @media (min-width: 1024px) {
-      width: 40%;
+    @media (max-width: $ig-small-screen) {
+      min-height: 250px;
     }
     &--container {
+      height: 100%;
       max-width: 1200px;
       margin: 0 auto;
     }
@@ -39,6 +42,24 @@
       letter-spacing: 0.025em;
       line-height: 1.625;
       margin-bottom: 2rem;
+    }
+  }
+}
+.patterns {
+  background-image: url('./assets/bg-effects.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &__light {
+    // transform: translateY(-5rem);
+    background-image: url('./assets/clouds.png');
+    background-position: top;
+    background-size: contain;
+    position: relative;
+    @media (max-width: $ig-small-screen) {
+      background-position: top;
     }
   }
 }

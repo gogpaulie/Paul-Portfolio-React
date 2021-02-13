@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext';
 import Tilt from 'react-tilt';
 import githubIcon from '../assets/icons/github.svg';
 import externalIcon from '../assets/icons/external-link.svg';
@@ -13,6 +14,7 @@ const Project = ({
   link,
   id,
 }) => {
+  const { theme } = useContext(ThemeContext);
   return (
     <div className='project container'>
       <div
@@ -29,11 +31,11 @@ const Project = ({
         </Tilt>
       </div>
       <div className='project__info order1'>
-        <h3 className='project__info--title'>{title}</h3>
+        <h3 className={`project__info--title ${theme}`}>{title}</h3>
         <p className='project__info--desc'>{description}</p>
         <ul className='project__info--tools'>
           {tools.map((tool) => (
-            <li className='project__info--tools-badge' key={tool}>
+            <li className={`project__info--tools-badge ${theme}`} key={tool}>
               {tool}
             </li>
           ))}
@@ -45,8 +47,8 @@ const Project = ({
             rel='noreferrer'
             href={github}
           >
-            <img src={githubIcon} alt='see code' />
-            <p>
+            <i className={`fab fa-github ${theme}`}></i>
+            <p className={`${theme}`}>
               <span>&larr;</span> See Code
             </p>
           </a>
@@ -56,8 +58,8 @@ const Project = ({
             rel='noreferrer'
             href={link}
           >
-            <img src={externalIcon} alt='see live' />
-            <p>
+            <i className={`fas fa-external-link-alt ${theme}`}></i>
+            <p className={`${theme}`}>
               <span>&larr;</span> See Live
             </p>
           </a>

@@ -14,6 +14,7 @@
 
     &__image {
       order: 1;
+      margin-top: 5rem;
     }
 
     &__info {
@@ -70,10 +71,19 @@
       &-badge {
         margin: 0.5rem;
         padding: 0.5rem 1rem;
-        border: 1px solid white;
-        border-radius: 5px;
+        border: 2px solid transparent;
+        border-image: linear-gradient(
+          135deg,
+          $primary-color 0%,
+          $secondary-color 100%
+        );
+        border-image-slice: 1;
         &:first-child {
           margin-left: 0;
+        }
+
+        &.light {
+          border: 1px solid black;
         }
       }
     }
@@ -85,9 +95,13 @@
       height: 3rem;
       width: 3rem;
 
-      & img {
-        height: 100%;
-        width: 100%;
+      & i {
+        font-size: 3.5rem;
+        color: white;
+        margin: 1rem 0;
+        &.light {
+          color: black;
+        }
       }
 
       &-github {
@@ -95,7 +109,7 @@
 
         &:hover p {
           opacity: 1;
-          transform: translateX(5rem);
+          transform: translate(5rem, 1rem);
         }
         & span {
           margin-right: 0.5rem;
@@ -110,17 +124,20 @@
           color: white;
           position: absolute;
           top: 10px;
-          transform: translateX(-10px);
+          transform: translate(-10px, 5px);
           z-index: -2;
           opacity: 0;
           transition: all 0.3s ease;
+          &.light {
+            color: black;
+          }
         }
       }
       &-live {
         position: relative;
         &:hover p {
           opacity: 1;
-          transform: translateX(5rem);
+          transform: translate(5rem, 1rem);
         }
         & span {
           margin-right: 0.5rem;
@@ -134,10 +151,13 @@
           color: white;
           position: absolute;
           top: 10px;
-          transform: translateX(-10px);
+          transform: translate(-10px, 5px);
           z-index: -2;
           opacity: 0;
           transition: all 0.3s ease;
+          &.light {
+            color: black;
+          }
         }
       }
     }

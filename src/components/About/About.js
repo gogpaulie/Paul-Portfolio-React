@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../../context/ThemeContext';
 import Technologies from './Technologies';
 
 const About = () => {
+  const { theme } = useContext(ThemeContext);
   return (
     <div className='about' id='about'>
-      <h2 className='about__title'>About Me</h2>
+      <h2 className={`about__title ${theme}`}>About Me</h2>
       <div className='about__story'>
         <p>
           I'm currently based in Indianapolis, Indiana and soon will be moving

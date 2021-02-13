@@ -8,12 +8,11 @@ const ThemeSwitcher = () => {
     <select
       className={`theme-select ${theme}`}
       onChange={(e) => handleSetTheme(e.target.value)}
+      defaultValue='dark'
     >
       <option value='light'>Light Mode</option>
-      <option selected value='dark'>
-        Dark Mode
-      </option>
-      <option value='nineties'>90s Mode</option>
+      <option value='dark'>Dark Mode</option>
+      {/* <option value='nineties'>90s Mode</option> */}
     </select>
   );
 };

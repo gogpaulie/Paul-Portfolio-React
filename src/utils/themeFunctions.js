@@ -6,8 +6,8 @@ export const darkTheme = () => {
 };
 export const lightTheme = () => {
   return (
-    (document.body.style.backgroundColor = 'rgba(255, 255, 255, 0.87)'),
-    (document.body.style.color = 'rgb(18, 18, 18)')
+    (document.body.style.backgroundColor = '#98C2FF'),
+    (document.body.style.color = 'black')
   );
 };
 export const ninetiesTheme = () => {
