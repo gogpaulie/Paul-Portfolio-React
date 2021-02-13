@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
-
+import React, { useEffect, useState, useContext } from 'react';
+import { ThemeContext } from './context/ThemeContext';
+import { darkTheme, lightTheme, ninetiesTheme } from './utils/themeFunctions';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About/About';
@@ -14,6 +15,8 @@ function App() {
   const [scrollActive, setScrollActive] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
   const [openNav, setOpenNav] = useState(false);
+
+  const { theme } = useContext(ThemeContext);
 
   function handleScroll() {
     if (window.scrollY > 50) {
@@ -36,10 +39,20 @@ function App() {
   }
 
   useEffect(() => {
+    if (theme === 'dark') {
+      darkTheme();
+    }
+    if (theme === 'light') {
+      lightTheme();
+    }
+    if (theme === 'nineties') {
+      ninetiesTheme();
+    }
+
     handleResize();
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
-  }, []);
+  }, [theme]);
 
   return (
     <div className='App container' id='home'>

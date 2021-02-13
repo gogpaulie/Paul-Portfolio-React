@@ -1,5 +1,6 @@
 import logo from '../assets/logoTransparent.png';
 import logoWebp from '../assets/logoTransparent.webp';
+import ThemeSwitcher from './ThemeSwitcher';
 
 const Navbar = ({ scrollActive, isMobileView, open, handleOpen }) => {
   return (
@@ -15,6 +16,7 @@ const Navbar = ({ scrollActive, isMobileView, open, handleOpen }) => {
               </picture>
             </a>
           </div>
+          <ThemeSwitcher />
           {isMobileView ? (
             <i
               className={`fas fa-${open ? 'times' : 'bars'}`}
