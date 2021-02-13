@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap');
+
+// BREAKPOINTS
 $ig-med-screen: 1200px !default;
 $ig-small-screen: 768px !default;
 $ig-xsmall-screen: 480px !default;
-// COLOR VARIABLES
-$color-primary: #04473d;
-$color-primary-dark: #b28451;
-
-$color-secondary: #101d2c;
-
-$color-grey-light-1: #f9f7f6;
-$color-grey-light-2: #aaa;
-
-$color-grey-dark-1: #54483a;
-$color-grey-dark-2: #6d5d4b;
+// THEME VARIABLES
+$dark-theme-text: rgba(255, 255, 255, 0.87);
+$dark-theme-background: rgb(18, 18, 18);
+$light-theme-text: rgb(18, 18, 18);
+$light-theme-background: rgba(255, 255, 255, 0.87);
+$nineties-theme-text: rgba(255, 255, 255, 0.87);
+$nineties-theme-background: pink;
 
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
@@ -62,8 +60,8 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0;
-  background-color: rgb(18, 18, 18);
-  color: rgba(255, 255, 255, 0.87);
+  background-color: $dark-theme-background;
+  color: $dark-theme-text;
   font-size: 1rem;
 
   line-height: 1.5rem;

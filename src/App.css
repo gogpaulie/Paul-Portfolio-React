@@ -99,9 +99,6 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
       .nav__logo img {
         height: 60px;
         width: 60px; } }
-  .nav__drawer-links {
-    text-decoration: none;
-    color: #04473d; }
   .nav i {
     font-size: 3rem;
     margin-right: 3rem;
@@ -418,7 +415,6 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     .contact-form__control:valid:focus {
       border-color: green; }
   .contact-form__btn {
-    background-color: #04473d;
     border: none;
     border-radius: 3px;
     color: #fff;
@@ -439,7 +435,6 @@ textarea {
   resize: none; }
 
 .sent {
-  background-color: #04473d;
   color: #fff; }
 
 .g-recaptcha {
@@ -483,6 +478,21 @@ textarea {
 
 .drawer.open {
   transform: translateX(0); }
+
+.theme-select {
+  color: white;
+  font-family: inherit;
+  background-color: #121212;
+  padding: 1rem 2rem;
+  border: 2px solid transparent;
+  border-image: linear-gradient(135deg, #4158d0 0%, #a162e8 100%);
+  border-image-slice: 1; }
+  .theme-select.light {
+    color: #121212;
+    background-color: rgba(255, 255, 255, 0.87); }
+  .theme-select.nineties {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: pink; }
 
 .about {
   text-align: center;

@@ -90,7 +90,6 @@ $ig-xsmall-screen: 480px !default;
     }
   }
   &__btn {
-    background-color: $color-primary;
     border: none;
     border-radius: 3px;
     color: #fff;
@@ -116,7 +115,6 @@ textarea {
   resize: none;
 }
 .sent {
-  background-color: $color-primary;
   color: #fff;
 }
 

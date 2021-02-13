@@ -1,25 +1,20 @@
-import React, { useEffect, useRef } from 'react';
-import Lottie from 'lottie-web';
-import animate from 'lottie-web';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext';
+import Spacesuit from './Animations/Spacesuit';
+import Mario from './Animations/Mario';
+import Laptop from './Animations/Laptop';
 
 const Hero = () => {
-  const container = useRef(null);
-
-  useEffect(() => {
-    Lottie.loadAnimation({
-      container: container.current,
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      animationData: require('./spacesuit-dashboard.json'),
-    });
-    animate.setSpeed(0.5);
-  }, []);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <section className='Hero patterns'>
       <div className='Hero__animation'>
-        <div className='Hero__animation--container' ref={container}></div>
+        <div className='Hero__animation--container'>
+          {theme === 'dark' && <Spacesuit />}
+          {theme === 'light' && <Laptop />}
+          {theme === 'nineties' && <Mario />}
+        </div>
       </div>
       <div className='Hero__heading'>
         <h1 className='Hero__heading--name'>Hello. I’m Paul</h1>

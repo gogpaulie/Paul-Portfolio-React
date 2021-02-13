@@ -1,5 +1,4 @@
 .Hero {
-  // height: 100vh;
   margin: 4rem;
   padding: 10rem 0;
   @media (min-width: 768px) {
@@ -41,29 +40,5 @@
       line-height: 1.625;
       margin-bottom: 2rem;
     }
-    // &--cta {
-    //   display: flex;
-    //   align-items: center;
-    //   font-family: inherit;
-    //   font-weight: 700;
-    //   color: white;
-    //   padding: 1rem 2rem;
-    //   cursor: pointer;
-    //   border: 2px solid white;
-    //   border-radius: 5px;
-    //   &:focus {
-    //     outline: none;
-    //   }
-    //   background-color: rgb(18, 18, 18);
-    //   & span {
-    //     font-size: 2rem;
-    //   }
-    //   // background-image: linear-gradient(
-    //   //   43deg,
-    //   //   #a162e8 0%,
-    //   //   #f7ce68 46%,
-    //   //   #85ffbd 100%
-    //   // );
-    // }
   }
 }
