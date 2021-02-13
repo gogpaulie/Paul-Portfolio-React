@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import Tilt from 'react-tilt';
-import githubIcon from '../assets/icons/github.svg';
-import externalIcon from '../assets/icons/external-link.svg';
 
 const Project = ({
   title,
