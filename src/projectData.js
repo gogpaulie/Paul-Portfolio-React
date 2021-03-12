@@ -12,14 +12,14 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Movie App',
-    image: `${process.env.PUBLIC_URL}movieapp.jpg`,
-    webp: `${process.env.PUBLIC_URL}movieapp.webp`,
+    title: 'Poke98',
+    image: `${process.env.PUBLIC_URL}poke98.jpg`,
+    webp: `${process.env.PUBLIC_URL}poke98.webp`,
     description:
-      'Discover the most popular, top rated and latest movies. Users can also find a movie based on the movie title.',
+      'A recreation of the Windows 98 UI with a built-in pokedex app.',
     tools: ['React', 'API', 'SASS'],
-    github: 'https://github.com/gogpaulie/movieDB',
-    link: 'https://gogpaulie.github.io/movieDB',
+    github: 'https://github.com/gogpaulie/poke98',
+    link: 'https://wonderful-lichterman-842105.netlify.app/',
   },
   {
     id: 3,
