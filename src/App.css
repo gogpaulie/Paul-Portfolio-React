@@ -527,6 +527,49 @@ textarea {
     color: rgba(255, 255, 255, 0.87);
     background-color: pink; }
 
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  z-index: 100; }
+  .theme-switcher span {
+    margin-right: 10px;
+    font-size: 1rem; }
+  .theme-switcher__toggle-icon {
+    margin-left: 10px; }
+  .theme-switcher__label {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px; }
+    .theme-switcher__label input {
+      display: none; }
+      .theme-switcher__label input:checked + .theme-switcher__label--slider {
+        background: #4158d0; }
+        .theme-switcher__label input:checked + .theme-switcher__label--slider::before {
+          transform: translateX(26px); }
+    .theme-switcher__label--slider {
+      background: #ccc;
+      bottom: 0;
+      cursor: pointer;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: 0.4s; }
+      .theme-switcher__label--slider::before {
+        background: #fff;
+        bottom: 4px;
+        content: '';
+        height: 26px;
+        left: 4px;
+        position: absolute;
+        transition: 0.4s;
+        width: 26px; }
+      .theme-switcher__label--slider.round {
+        border-radius: 34px; }
+        .theme-switcher__label--slider.round::before {
+          border-radius: 50%; }
+
 .about {
   text-align: center;
   padding: 5rem;

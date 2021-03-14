@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import logo from '../assets/logoTransparent.png';
 import logoBlack from '../assets/logoTransparent-black.png';
 import logoWebp from '../assets/logoTransparent.webp';
-import ThemeSwitcher from './ThemeSwitcher';
+import ThemeToggleSwitch from './ThemeToggleSwitch';
 import { ThemeContext } from '../context/ThemeContext';
 
 const Navbar = ({ scrollActive, isMobileView, open, handleOpen }) => {
@@ -28,7 +28,7 @@ const Navbar = ({ scrollActive, isMobileView, open, handleOpen }) => {
               ) : null}
             </a>
           </div>
-          <ThemeSwitcher />
+          <ThemeToggleSwitch />
           {isMobileView ? (
             <i
               className={`fas fa-${open ? 'times' : 'bars'}`}
