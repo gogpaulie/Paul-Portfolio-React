@@ -65,6 +65,6 @@ export const freelance = [
       'A website for a video editor client showing off his video editing and voice acting skills.',
     tools: ['Vue', 'SASS'],
     github: 'https://github.com/gogpaulie/noob-site-vue',
-    link: 'https://upbeat-elion-3fafe9.netlify.app',
+    link: 'https://perpetualnoob.net/',
   },
 ];
