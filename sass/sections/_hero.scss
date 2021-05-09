@@ -27,8 +27,11 @@
     }
   }
   &__heading {
-    max-width: 35rem;
+    max-width: 45rem;
     margin-bottom: auto;
+    @media (max-width: $ig-small-screen) {
+      max-width: 35rem;
+    }
     &--name {
       font-size: 7rem;
       line-height: 1;
@@ -62,4 +65,7 @@
       background-position: top;
     }
   }
+}
+.hero-button-wrapper {
+  display: flex;
 }

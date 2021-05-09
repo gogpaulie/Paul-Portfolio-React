@@ -7,7 +7,7 @@ const FreelanceSection = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <section id='freelance' className='projects freelance'>
-      <h2 className={`projects__title ${theme}`}>Website Examples</h2>
+      <h2 className={`projects__title ${theme}`}>Client Examples</h2>
       {freelance.map((p) => (
         <Project
           key={p.id}

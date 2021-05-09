@@ -47,15 +47,16 @@ const Navbar = ({ scrollActive, isMobileView, open, handleOpen }) => {
                 </a>
               </li>
               <li>
+                <a className={`${theme}`} href='#freelance'>
+                  Client work
+                </a>
+              </li>
+              <li>
                 <a className={`${theme}`} href='#projects'>
                   Projects
                 </a>
               </li>
-              <li>
-                <a className={`${theme}`} href='#freelance'>
-                  Services
-                </a>
-              </li>
+
               <li>
                 <a className={`${theme}`} href='#contact'>
                   Contact

@@ -47,14 +47,23 @@ const Hero = () => {
           responsive websites. I never stop learning and for me, each new
           project is another adventure.{' '}
         </p>
-        <a
-          className='cta-btn cta-btn--hero'
-          href='https://pdfhost.io/v/F4f.rV8L2_ppresumefig0221minpdf.pdf'
-          target='_blank'
-          rel='noreferrer'
-        >
-          View Resume <span>&rarr;</span>
-        </a>
+        <div className='hero-button-wrapper'>
+          <a
+            className='cta-btn cta-btn--hero'
+            href='https://pdfhost.io/v/F4f.rV8L2_ppresumefig0221minpdf.pdf'
+            target='_blank'
+            rel='noreferrer'
+          >
+            View Resume <span>&rarr;</span>
+          </a>
+          <a
+            className='cta-btn cta-btn--hero'
+            href='#freelance'
+            rel='noreferrer'
+          >
+            See Work <span>&rarr;</span>
+          </a>
+        </div>
       </div>
     </section>
   );

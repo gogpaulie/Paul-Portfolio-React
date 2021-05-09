@@ -48,6 +48,16 @@ export const projects = [
 export const freelance = [
   {
     id: 1,
+    title: 'Charity Ecommerce Redesign',
+    image: `${process.env.PUBLIC_URL}dtl.jpg`,
+    webp: `${process.env.PUBLIC_URL}dtl.webp`,
+    description: `A redesign of The Denver Tool library. Complete with ecommerce features and custom cart.`,
+    tools: ['Webflow'],
+    github: 'https://github.com/gogpaulie/Denver-tool-library',
+    link: 'https://denver-tool-library.webflow.io/',
+  },
+  {
+    id: 2,
     title: 'Graphic Design Portfolio',
     image: `${process.env.PUBLIC_URL}nessa.jpg`,
     webp: `${process.env.PUBLIC_URL}nessa.webp`,
@@ -57,7 +67,7 @@ export const freelance = [
     link: 'https://vanessabrasfield.com/',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Video Editing Website',
     image: `${process.env.PUBLIC_URL}noob.jpg`,
     webp: `${process.env.PUBLIC_URL}noob.webp`,

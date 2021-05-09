@@ -65,8 +65,8 @@ function App() {
       />
       <Hero />
       <About />
-      <ProjectSection />
       <FreelanceSection />
+      <ProjectSection />
       <Contact />
       <Footer />
     </div>

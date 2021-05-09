@@ -15,15 +15,16 @@ const NavbarMobileDrawer = ({ open, handleOpen }) => {
           </a>
         </li>
         <li className='drawer__list--link'>
+          <a href='#freelance' onClick={handleOpen}>
+            Client work
+          </a>
+        </li>
+        <li className='drawer__list--link'>
           <a href='#projects' onClick={handleOpen}>
             Projects
           </a>
         </li>
-        <li className='drawer__list--link'>
-          <a href='#freelance' onClick={handleOpen}>
-            Sevices
-          </a>
-        </li>
+
         <li className='drawer__list--link'>
           <a href='#contact' onClick={handleOpen}>
             Contact
