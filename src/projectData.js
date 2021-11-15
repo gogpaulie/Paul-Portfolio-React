@@ -64,7 +64,7 @@ export const freelance = [
     description: 'A website build for a freelance client showcasing her art.',
     tools: ['React', 'SASS', 'Material UI'],
     github: 'https://github.com/gogpaulie/Vanessa-Brasfield-react',
-    link: 'https://vanessabrasfield.com/',
+    link: 'https://msvanessab.com/',
   },
   {
     id: 3,
